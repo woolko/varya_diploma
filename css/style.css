@@ -1,0 +1,1043 @@
+/*@font-face {
+font-family: "OpenSans";
+src: 
+url('sources/fonts/OpenSans-Regular.woff') format("woff"),
+url('sources/fonts/OpenSans-Regular.woff2') format("woff2"),
+url('sources/fonts/OpenSans-Regular.ttf') format('truetype'),
+url('sources/fonts/OpenSans-Bold.woff') format("woff"),
+url('sources/fonts/OpenSans-Bold.woff2') format("woff2"),
+url('sources/fonts/OpenSans-Bold.ttf') format('truetype');
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+	box-sizing : border-box; 
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  color: #c1c1c1;
+  text-align: left;
+  font-weight: 700;
+}
+
+
+p {
+  text-align: left;
+}
+
+
+/*всем бэкграунд изображениям добавить бэкграунд колор если не загрузятся!!
+
+pt to px
+
+
+паддинги проверить!!!!!!*/
+
+
+/* section top_page*/
+
+.top_page, .footer {
+  border: 1px solid red;
+  color: #0f0f31;    
+}
+
+.top__body, .footer__body {     /*возможно тут не нужен футер*/
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.top__body::before {
+  background-size: cover;
+  background-position: center;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.top__body::after {
+  background-color: #090c35;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.top-message {
+
+  border: 1px solid gold;
+}
+
+.top__title, .top__title1, .footer__title, .footer__subtitle {
+  
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.apple__icon, .surface_logo_text, .google__icon, .surface_logo {
+  fill: #ffffff;  
+}
+
+.download {
+  background: #5e42b0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.download > .fa {
+  color: #fff;
+  }
+
+.df,
+.dfn {
+  text-transform: uppercase;
+}
+
+.dfn {
+    font-weight: 700;
+}
+
+.download:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.google__icon, .apple__icon {
+  fill: #ffffff; 
+}
+
+
+.athlets_page {
+  border: 1px solid red;
+}
+
+.athlets__title, .players__title {
+   color: #e7e7e7;
+  }
+
+.text, .text1, .text_pgrowth, .text_agrowth {
+    font-weight: 700;
+  }
+  
+.text1, .text_pgrowth, .text_agrowth2, .players__growth_message {
+  color: #ffffff;
+}
+
+.text1 {
+ text-align: center;
+
+}
+
+.text_agrowth {
+    color: #0a0e34;
+  }
+  
+.text_pgrowth {
+    color: #8765dd;
+  }
+
+.athlets__connection, .players__connection {
+  background-color: #fafafa;
+}
+  
+.athlets__collaboration, .players__collaboration {
+  background-color: #f5f4f9;
+}
+
+.athlets__growth {
+  background-color: #5e42b0;
+}
+
+.players_page {
+  border: 1px solid red;
+}
+
+.players__growth {
+  background-color: #090c35;
+}
+
+.be_active_page {
+  border: 1px solid red;
+}
+
+.find_contact_page {
+  border: 1px solid red;
+}
+
+
+
+.work_it_page {
+  border: 1px solid red;
+}
+
+
+
+.footer {
+  border: 1px solid green;
+    /*position: relative;*/
+}*
+
+
+
+.footer__body::before {
+  background-size: cover;
+  background-position: center;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.footer__body::after {
+  background-color: #090c35;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.rectangle2 {
+  background: linear-gradient(#7751db, #50329c);
+  border: 1px solid green;
+}
+
+
+.footer__title {
+  margin: 3% 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer__subtitle {
+  margin: 3% 0;
+  text-transform: uppercase;
+  color: #9b8ec1;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+
+
+
+
+@media (max-width: 640px) {  /*телефон*/
+    
+    
+  .surface_logo_text {
+    width: 8.25em; 
+    /*margin-top: 11.4em;  */
+  }
+  
+  h1 {
+    font-size: 1.75em;  
+    /*margin: 20px;*/
+  }
+  
+  h1, h2, p {
+    letter-spacing: 2px; 
+  }
+  
+  h2 {
+    font-size: 1.4em;
+    /*margin: 20px;*/
+    line-height: 34px; /*перевести в em*/       
+  }  
+  
+  p {
+    font-size: 15px;  /*перевести в em*/
+    margin: 20px; /*перевести в em*/
+    line-height: 18px; /*перевести в em*/
+  }
+    
+    .top__body, .footer__body {
+  position: relative;   /*убрать, если появились лишние места*/
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+    
+  .top__body::before {
+    background-image: url("https://raw.githubusercontent.com/varyabeauff/Diploma/master/sources/images/football_767.jpg");
+  }
+  
+  .top__title {
+      /*margin: 20px; от фонаря*/
+      margin-top: 135px; /*перевести в em*/
+    }
+    
+  
+  .top__title1 {
+    margin-top: 13px; /*от фонаря перевести в em*/
+    margin-left: 44px; /*перевести в em*/
+  }
+    
+    .top-message {
+        position: relative;
+    }
+  
+  .top__title, .top__title1, .footer__title, .footer__subtitle {     /*????? нужно ли*/
+  display: block;
+}
+  
+  
+    
+.download {
+    min-width: 100%;
+  width: 280px;
+  height: 35px;
+  float: left;
+  border-radius: 25px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.download > .fa {
+    position: absolute;
+  top: calc(50% - 12px);
+  left: 82px;  
+}
+
+.df,
+.dfn {
+  position: absolute;
+  left: 112px;
+}
+
+.df {
+  top: calc(25% - 0.5em);
+  font-size: 0.5em;
+}
+
+.dfn {
+  margin-top: 2em;
+  font-size: 0.5em;
+}
+    
+    .google__icon, .apple__icon {
+  position: absolute;
+  height: 24px;
+}
+
+  
+  .apple {
+    margin-top: 0.875em; /*перевести в em*/
+    margin-bottom: 85px; /*перевести в em*/
+      float: left;
+  }
+  
+  .athlets__body {
+    border: 1px solid green;
+    position: relative;
+  }
+  
+  .athlets__title, .players__title {
+    margin-top: 25px; /*перевести в em*/
+    margin-bottom: 230px; /*перевести в em*/
+      margin-left: 20px;
+    font-size: 50px; /*перевести в em*/
+    letter-spacing: 3px;
+  }
+  
+  .athlets__preview, .players__preview {
+    position: absolute;
+    margin-top: 100px;
+      left: calc(50% - 150px/2);    /*подумать что тут*/
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+}
+    
+  .athlets__connection {
+    padding-top: 84px;
+  }
+  
+  .athlets__connection, .athlets__collaboration, .athlets__growth, .players__connection, .players__collaboration, .players__growth, .be_active__body, .find_contact__body, .work_it__body {
+    display: flex;
+  }
+
+  .athlets__connection__message, .athlets__collaboration__message, .athlets__growth__message, .players__connection_message, .players__collaboration_message, .players__growth_message, .be_active__message, .find_contact__message, .work_it__message, .players__connection_message2 {
+    display: inline-block;
+  }
+  
+  
+    #dynamicimage {
+    position: absolute;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1s%0D%0AbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxNSA0IiBz%0D%0AdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNSA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2%0D%0AZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xp%0D%0AcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojNUU0MkIwO30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3Qw%0D%0AIiBkPSJNMS41LDBoMTJDMTQuMywwLDE1LDAuNywxNSwxLjV2MUMxNSwzLjMsMTQuMyw0LDEzLjUs%0D%0ANGgtMTJDMC43LDQsMCwzLjMsMCwyLjV2LTFDMCwwLjcsMC43LDAsMS41LDB6Ii8+DQo8L3N2Zz4N%0D%0ACg==) no-repeat center/contain;
+    width: 1em;
+    height: 1em;
+    margin: -20px 0 0 20px;
+    content: "";
+    }
+     #dynamicimage2 {
+    position: absolute;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1s%0D%0AbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxNSA0IiBz%0D%0AdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNSA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2%0D%0AZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xp%0D%0AcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojOEY3QkM4O30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3Qw%0D%0AIiBkPSJNMS41LDBoMTJDMTQuMywwLDE1LDAuNywxNSwxLjV2MUMxNSwzLjMsMTQuMyw0LDEzLjUs%0D%0ANGgtMTJDMC43LDQsMCwzLjMsMCwyLjV2LTFDMCwwLjcsMC43LDAsMS41LDB6Ii8+DQo8L3N2Zz4N%0D%0ACg==) no-repeat center/contain;
+    width: 1em;
+    height: 1em;
+    margin: -20px 0 0 20px;
+    content: "";
+    }
+     #dynamicimagew {
+    position: absolute;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1s%0D%0AbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxNSA0IiBz%0D%0AdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNSA0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2%0D%0AZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xp%0D%0AcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3Qw%0D%0AIiBkPSJNMS41LDBoMTJDMTQuMywwLDE1LDAuNywxNSwxLjV2MUMxNSwzLjMsMTQuMyw0LDEzLjUs%0D%0ANGgtMTJDMC43LDQsMCwzLjMsMCwyLjV2LTFDMCwwLjcsMC43LDAsMS41LDB6Ii8+DQo8L3N2Zz4N%0D%0ACg==) no-repeat center/contain;
+    width: 1em;
+    height: 1em;
+    margin: -20px 0 0 20px;
+    content: "";
+    }
+  
+  
+    
+  .text {
+    font-size: 14px;
+  }
+  
+  .text1 {
+    font-size: 14px;
+    /*margin-bottom: 3px;*/
+  }
+  
+    .text5 {
+        font-size: 16px;
+    }
+  
+    
+  .be_active, .find_contact, .work_it  {
+    width: 70px; /*перевести в em*/
+    height: 70px; /*перевести в em*/
+    background: #5e42b0;
+  }
+  
+  .be_active2 {
+    color: #8f7bc8;
+  }
+
+    
+    .work_it_page {
+  position: relative;
+}
+    
+    .work_it__preview {
+  display: inline-block;  
+  }
+   
+    .footer {
+    position: relative;
+}
+    
+    .footer-message {
+        border: 1px solid gold;
+    }  
+    
+  .footer__body::before {
+    background-image: url("https://raw.githubusercontent.com/varyabeauff/Diploma/master/sources/images/game_767.jpg");
+  }
+    
+  .rectangle2 {
+    background: linear-gradient (#7751db, #50329c);
+    border-radius: 20px;  
+    padding: 8px 14px; 
+    width: 72px;
+    height: 74px;
+    margin-top: 75px;
+  }
+    
+    .footer__title {
+        margin-top: 60px;
+    }
+    
+    .footer__subtitle {
+  font-size: 14px;  /*перевести в em*/
+        letter-spacing: 0px;
+        margin-bottom: 75px;
+  }
+}
+
+
+@media (min-width: 641px) {
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+       
+     .players_page, .athlets_page {
+  display: flex;
+  width: 100%;
+    }
+    
+    .download {    
+  width: 310px;
+  height: 77px;
+  border-radius: 45px;
+  position: relative;
+}
+    .download > .fa {
+    position: absolute;
+  top: calc(50% - 22px);
+  left: 60px;  
+}
+
+.df,
+.dfn {
+  position: absolute;
+  left: 125px;
+}
+
+.df {
+  top: calc(50% - 18px);
+  font-size: 14px;   /*перевести в em*/
+}
+
+.dfn {
+  margin-top: 40px; /*перевести в em*/
+  font-size: 14px; /*перевести в em*/
+}
+    
+.google__icon, .apple__icon {
+  position: absolute;
+  height: 44px;
+}
+    
+    #dynamicimage {      /*с этим что-то не то*/
+    position: absolute;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1s%0D%0AbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOSA1IiBz%0D%0AdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOSA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2%0D%0AZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xp%0D%0AcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojNUU0MkIwO30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3Qw%0D%0AIiBkPSJNMiwwaDE1YzEuMSwwLDIsMC45LDIsMnYxYzAsMS4xLTAuOSwyLTIsMkgyQzAuOSw1LDAs%0D%0ANC4xLDAsM1YyQzAsMC45LDAuOSwwLDIsMHoiLz4NCjwvc3ZnPg0K) no-repeat center/contain;
+     content: "";
+   }
+    
+    #dynamicimage2 {
+    position: absolute;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1s%0D%0AbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOSA1IiBz%0D%0AdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOSA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2%0D%0AZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xp%0D%0AcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojOEY3QkM4O30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3Qw%0D%0AIiBkPSJNMiwwaDE1YzEuMSwwLDIsMC45LDIsMnYxYzAsMS4xLTAuOSwyLTIsMkgyQzAuOSw1LDAs%0D%0ANC4xLDAsM1YyQzAsMC45LDAuOSwwLDIsMHoiLz4NCjwvc3ZnPg0K) no-repeat center/contain;
+    content: "";
+    }
+    
+    #dynamicimagew {
+    position: absolute;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBB%0D%0AZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9u%0D%0AOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1s%0D%0AbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxOSA1IiBz%0D%0AdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOSA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2%0D%0AZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xp%0D%0AcC1ydWxlOmV2ZW5vZGQ7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3Qw%0D%0AIiBkPSJNMiwwaDE1YzEuMSwwLDIsMC45LDIsMnYxYzAsMS4xLTAuOSwyLTIsMkgyQzAuOSw1LDAs%0D%0ANC4xLDAsM1YyQzAsMC45LDAuOSwwLDIsMHoiLz4NCjwvc3ZnPg0K) no-repeat center/contain;
+    /*width: 1.2em;
+    height: 1.2em;
+    margin: -20px 0 0 20px;
+    content: "";                             media*/
+    }
+}
+
+
+
+@media (min-width: 641px) and (max-width: 960px) {    /*ipad*/
+  .surface_logo_text {
+    width: 205px; /*перевести в em*/
+    /*margin-top: 32px;  /*перевести в em*/
+  }
+  .top__body::before {
+     background-image: url("https://raw.githubusercontent.com/varyabeauff/Diploma/master/sources/images/football_1280.jpg");
+   }
+  
+  .store_buttons {
+    border: 1px solid blue;
+    margin: 140px 120px;   /*это зависит от медиа*/
+  }
+    
+  .footer__body::before {
+     background-image: url("https://raw.githubusercontent.com/varyabeauff/Diploma/master/sources/images/game_1280.jpg");
+   }
+    
+    h1 {
+    font-size: 80px;  /*!перевести в em*/
+     /* margin-left: 60px;/*перевести в em*/
+    /*margin: 20px;*/
+  }
+  
+  h1, h2, p {
+    letter-spacing: 2px; 
+  }
+  
+  h2 { 
+    font-size: 32px; /*!перевести в em*/  
+    /*margin-right: 50px;*/
+    line-height: 34px; /*перевести в em*/       
+  }  
+  
+  p {
+    font-size: 16px;  /*!перевести в em*/
+    margin-left: 32px; /*перевести в em*/
+    line-height: 28px; /*перевести в em*/
+  }
+    
+    .top__body, .footer__body {
+  position: relative;   /*убрать, если появились лишние места*/
+  padding: 20px 32px;   /*перевести в em*/ 
+  box-sizing: border-box;
+}
+    
+  
+  .top__title {
+      margin-top: 180px; /*перевести в em*/
+      margin-bottom: 20px;
+    }
+    
+  
+  .top__title1 {
+    margin-top: 5px; /*от фонаря перевести в em*/
+    margin-left: 195px; /*перевести в em*/
+  }
+    
+  
+  .apple {
+    margin-left: 30px; /*перевести в em*/
+  }
+  
+  .athlets__body {
+    border: 1px solid green;
+      box-sizing: border-box;
+       }
+    
+   
+  
+  .athlets__title, .players__title {
+    margin-top: 25px; /*перевести в em*/
+    margin-bottom: 30px; /*перевести в em*/
+    letter-spacing: 3px;
+  }
+   
+  
+  .athlets__preview, {
+    margin-top: 100px;
+      position: relative;
+     z-index: 100;  /*?*/
+  }
+    
+   .players__preview {
+      /*display: block;   /*?*/
+    margin-top: 100px;
+     z-index: 5;  /*?*/
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+}
+    
+  .athlets__connection {
+    /*padding-top: 84px;*/
+      border: 1px solid gold;
+      background-color: white;
+  }
+    
+    .athlets__connection, .athlets__collaboration, .athlets__growth, .athlets__title {
+        padding-left: 293px ;
+    }
+    
+    
+  
+  .athlets__connection, .athlets__collaboration, .athlets__growth, .players__connection, .players__collaboration, .players__growth, .be_active__body, .find_contact__body, .work_it__body {
+   display: flex;
+  }
+
+
+ 
+    
+    
+ #dynamicimage {      
+    width: 1.2em;
+    height: 1.2em;
+    margin: -20px 0 0 30px;
+   }
+    
+    #dynamicimage2 {
+    width: 1.8em;
+    height: 1.4em;
+    margin: -20px 0 0 40px;
+}
+    
+    
+    #dynamicimagew {    
+    width: 1.2em;
+    height: 1.2em;
+    margin: -20px 0 0 30px;
+    }   
+
+
+    
+  .text {
+    font-size: 18px;   /*!перевести в em*/
+  }
+  
+  .text1 {
+    font-size: 24px;/*!перевести в em*/
+      margin-top: 48px;       /*подогнала, надо думать как*/
+  }
+  .text_agrowth {
+      font-size: 18px;
+    color: #0a0e34;
+  }
+  .text_agrowth2 {
+    color: #ffffff;
+  }
+  
+ 
+  
+  .be_active, .find_contact, .work_it  {    
+    width: 116px; /*перевести в em*/
+    height: 116px; /*перевести в em*/
+    background: #5e42b0;
+    margin-top: -80px;
+    margin-left: 32px;
+  }
+    
+    .text5 {
+        font-size: 24px;  /*pt to px, перевести в em*/
+        line-height: 28px;
+    }
+  
+ 
+    .footer-message {
+        border: 1px solid gold;
+    }  
+ 
+    
+  .rectangle2 {
+    background: linear-gradient (#7751db, #50329c);
+    border-radius: 20px;  
+    padding: 8px 14px; 
+    width: 72px;
+    height: 74px;
+    margin-top: 75px;
+  }
+    
+    .footer__title {
+        margin-top: 80px;
+    }
+    
+    .footer__subtitle {
+  font-size: 36px;  /*перевести в em*/
+        letter-spacing: 0px;
+        margin-bottom: 75px;
+}
+    
+    
+    
+}
+
+@media (min-width: 961px) {
+  .body {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+    
+    h1 {
+    font-size: 5.6em;  
+    /*margin: 20px;*/
+  }
+  
+  h1, h2, p {
+    letter-spacing: 2px; 
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    /*margin: 20px;*/
+    line-height: 34px; /*перевести в em*/       
+  }  
+  
+  p {
+    font-size: 1.25em; 
+    margin: 20px; /*перевести в em*/
+    line-height: 18px; /*перевести в em*/
+  }
+  
+  .surface_logo_text {
+    width: 191px; /*перевести в em*/
+  }
+  
+  .top__body::before {
+    background-image: url("https://raw.githubusercontent.com/varyabeauff/Diploma/master/sources/images/football_1920.jpg");
+  }
+  
+  .store_buttons {
+    border: 1px solid blue;
+    margin: 140px 20px;   /*это зависит от медиа*/
+  }
+  
+  .footer__body::before {
+    background-image: url("https://raw.githubusercontent.com/varyabeauff/Diploma/master/sources/images/game_1920.jpg");
+  }
+    
+    
+      
+    .top__body, .footer__body {
+  position: relative;   /*убрать, если появились лишние места*/
+  padding: 20px 32px;   /*перевести в em*/ 
+  box-sizing: border-box;
+}
+    
+  
+  .top__title {
+      margin-top: 180px; /*перевести в em*/
+      margin-bottom: 20px;
+    }
+    
+  
+  .top__title1 {
+    margin-top: 5px; /*от фонаря перевести в em*/
+    margin-left: 195px; /*перевести в em*/
+      text-align: right;
+  }
+    
+   
+
+
+
+
+  
+  .apple {
+    margin-left: 130px; /*перевести в em*/
+  }
+  
+  .athlets__body {
+    border: 1px solid green;
+      box-sizing: border-box; 
+}
+    
+   
+  
+  .athlets__title, .players__title {
+    margin-top: 25px; 
+    margin-bottom: 30px; 
+    letter-spacing: 3px;
+  }
+   
+  
+  .athlets__preview, {
+    margin-top: 100px;
+      position: relative;
+     z-index: 100;  /*?*/
+  }
+    
+   .players__preview {
+    margin-top: 100px;
+     z-index: 5;  /*?*/
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+}
+    
+  .athlets__connection {
+      border: 1px solid gold;
+      background-color: white;
+  }
+    
+    .athlets__connection, .athlets__collaboration, .athlets__growth, .athlets__title {
+        padding-left: 293px ;
+    }
+    
+    
+  
+  .athlets__connection, .athlets__collaboration, .athlets__growth, .players__connection, .players__collaboration, .players__growth, .be_active__body, .find_contact__body, .work_it__body {
+   display: flex;
+  }
+
+   
+    
+    
+ #dynamicimage {      
+    width: 1.2em;
+    height: 1.2em;
+    margin: -20px 0 0 30px;
+   }
+    
+    #dynamicimage2 {
+    width: 1.8em;
+    height: 1.4em;
+    margin: -20px 0 0 40px;
+}
+    
+    
+    #dynamicimagew {    
+    width: 1.2em;
+    height: 1.2em;
+    margin: -20px 0 0 30px;
+    }   
+
+     
+  .text {
+    font-size: 18px;   /*!перевести в em*/
+  }
+  
+  .text1 {
+    font-size: 24px;/*!перевести в em*/
+      margin-top: 48px;       /*подогнала, надо думать как*/
+  }
+  .text_agrowth {
+      font-size: 18px;
+    color: #0a0e34;
+  }
+  .text_agrowth2 {
+    color: #ffffff;
+  }
+  
+ .be_active_page, .find_contact_page, .work_it_page, .players_page, .athlets_page {
+  display: flex;
+  width: 100%;
+    }
+    
+ 
+    
+
+    
+    
+/*_____________________________________________!!!!сделать все одной высоты!!!______________________________*/    
+    
+.be_active, .find_contact, .work_it {
+  width: 168px;
+  height: 155px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  align-self: center;
+  z-index: 1000;
+  left: calc(50% - 168px/2);
+  position: absolute;
+  background: #5e42b0;
+}
+.be_active__message, .find_contact__message, .work_it__message {
+  max-width: 50%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 20px;
+  border: 1px solid blue; 
+}
+    
+ .be_active__message, .work_it__message {
+     padding-left: 8.125em;
+     padding-right: 8.125em;
+}   
+   
+  .find_contact__message {
+    padding-right: 11.87em; 
+    padding-left: 8.125em;
+} 
+    
+
+.find_contact__preview {
+  order: 2;
+}
+.find_contact {
+  order: 1;
+}
+    
+    
+    
+    .text5 {
+        font-size: 24px;  /*pt to px, перевести в em*/
+        line-height: 28px;
+    }
+  
+  
+    
+    .footer__body {
+       padding-bottom: 70px;         
+        
+    }
+    
+    .footer_download, .store_buttons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .footer-message {
+        border: 1px solid gold;
+        
+    }  
+    .footer_download {
+        border: 1px solid green;
+        margin-top: 230px;
+    }
+    
+  .rectangle2 {
+    background: linear-gradient (#7751db, #50329c);
+    border-radius: 20px;  
+    padding: 20px 14px; 
+    width: 130px;
+    height: 138px;
+    margin-top: 75px;
+      
+  }
+    
+.be_active__preview, .find_contact__preview, .work_it__preview {
+  max-width: 50%;
+  max-height: 730px;
+  height: 100%;
+  box-sizing: border-box;
+  color: #222;
+    margin: 0 auto;
+}
+    .be_active__preview img,  .find_contact__preview img, .work_it__preview img {
+        max-width: 100%
+}
+    
+    
+    /*---------------------выровнять иконку относительно текста!!!-----------------*/
+    
+    .footer__title {
+       /* margin-top: 80px;*/
+    }
+    
+    .footer__subtitle {
+        font-size: 36px;  /*перевести в em*/
+        letter-spacing: 0px;
+        /*margin-bottom: 75px;*/        
+        text-align: left;
+}
+    .download__text {
+        margin-left: 40px;
+    }
+    .download apple {
+        margin-left: 50px;
+    }
+    
+    .store_buttons {
+        margin-bottom: 260px; 
+        margin-top: 150px;
+    }
+}

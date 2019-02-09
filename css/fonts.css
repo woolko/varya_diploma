@@ -1,0 +1,10 @@
+@font-face {
+font-family: "OpenSans";
+src: 
+url('https://github.com/varyabeauff/Diploma/blob/master/sources/fonts/OpenSans-Regular.woff') format("woff"),
+url('https://github.com/varyabeauff/Diploma/blob/master/sources/fonts/OpenSans-Regular.woff2') format("woff2"),
+url('https://github.com/varyabeauff/Diploma/blob/master/sources/fonts/OpenSans-Regular.ttf') format('truetype'),
+url('https://github.com/varyabeauff/Diploma/blob/master/sources/fonts/OpenSans-Bold.woff') format("woff"),
+url('https://github.com/varyabeauff/Diploma/blob/master/sources/fonts/OpenSans-Bold.woff2') format("woff2"),
+url('https://github.com/varyabeauff/Diploma/blob/master/sources/fonts/OpenSans-Bold.ttf') format('truetype');
+}
