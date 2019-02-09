@@ -1,12 +1,12 @@
 @font-face {
 font-family: "OpenSans, Helvetica, Arial";
 src: 
-url('sources/fonts/OpenSans-Regular.woff') format("woff"),
-url('sources/fonts/OpenSans-Regular.woff2') format("woff2"),
-url('sources/fonts/OpenSans-Regular.ttf') format('truetype'),
-url('sources/fonts/OpenSans-Bold.woff') format("woff"),
-url('sources/fonts/OpenSans-Bold.woff2') format("woff2"),
-url('sources/fonts/OpenSans-Bold.ttf') format('truetype');
+url('/sources/fonts/OpenSans-Regular.woff') format("woff"),
+url('/sources/fonts/OpenSans-Regular.woff2') format("woff2"),
+url('/sources/fonts/OpenSans-Regular.ttf') format('truetype'),
+url('/sources/fonts/OpenSans-Bold.woff') format("woff"),
+url('/sources/fonts/OpenSans-Bold.woff2') format("woff2"),
+url('/sources/fonts/OpenSans-Bold.ttf') format('truetype');
 }
 
 /*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');*/
